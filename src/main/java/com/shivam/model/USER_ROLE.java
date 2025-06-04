@@ -2,6 +2,7 @@ package com.shivam.model;
 
 
 
+
 public enum USER_ROLE {
   
 	ROLE_CUSTOMER,
