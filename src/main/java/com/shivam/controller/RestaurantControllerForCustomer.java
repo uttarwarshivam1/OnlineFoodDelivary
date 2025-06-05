@@ -45,7 +45,7 @@ public class RestaurantControllerForCustomer {
 	   
 	   
 	   
-	   @GetMapping("/{id}") 
+	   @GetMapping
 	   public ResponseEntity<List<Restaurant>> getAllRestaurant (  @RequestHeader("Authorization" ) String jwt )
 			   throws Exception   {
 		    User user  = userService.findUserbyJwttoken(jwt);
