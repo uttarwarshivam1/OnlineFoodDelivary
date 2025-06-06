@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.shivam.model.Category;
 import com.shivam.model.IngredientsItem;
+import com.shivam.model.Restaurant;
 
 import lombok.Data;
 
@@ -16,6 +17,8 @@ public class CreateFoodRequest {
 	
 	private Long price;
 	
+	private Long restaurantId;
+	 
 	private Category category;
 	
 	private List<String> images;

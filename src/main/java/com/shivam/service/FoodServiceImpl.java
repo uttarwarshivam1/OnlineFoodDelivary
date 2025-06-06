@@ -54,7 +54,7 @@ public class FoodServiceImpl implements FoodService {
 
 	
 	@Override
-	public List<Food> getrestaurantsFodd(Long restaurantId, boolean isvegitarian, boolean isNonveg,
+	public List<Food> getrestaurantsFood(Long restaurantId, boolean isvegitarian, boolean isNonveg,
 			boolean isSeasonal,
 			String foodCategory) {
 		

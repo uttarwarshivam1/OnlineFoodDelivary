@@ -112,10 +112,10 @@ public class RestaurantServiceImpl implements RestaurantService {
 	
 	
 	@Override
-	public Restaurant findRestaurantById(Long id) throws Exception {
-		  Optional<Restaurant> opt = restaurantRespositiory.findById(id);
+	public Restaurant findRestaurantById(Long restaurantId) throws Exception {
+		  Optional<Restaurant> opt = restaurantRespositiory.findById(restaurantId);
 		  if (opt.isEmpty()) {
-			  throw new Exception("Restaurant not found with Id : "+id);
+			  throw new Exception("Restaurant not found with Id : "+restaurantId);
 		  }
 		  	return opt.get();
 	}
